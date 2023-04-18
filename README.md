@@ -15,3 +15,4 @@
 * vp_showdata_coworst <number> - Show VProfiler current worst functions by count
 * vp_showdata_maxworst <number> - Show VProfiler current worst functions by max time
 * vp_showdata_minworst <number> - Show VProfiler current worst functions by min time
+* vp_logwhen_exectime <time_s (eg : 0.1)> - Log function call when its exectime exceeds the given time
