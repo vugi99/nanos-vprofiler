@@ -104,11 +104,11 @@ local function _VProfiler_ShowData_SortByKey(key, text)
             local inserted = false
             for i, v2 in ipairs(data_displayed) do
                 if v2[key] < v[key] then
+                    table.insert(data_displayed, i, v)
                     if data_count < max_nb then
-                        table.insert(data_displayed, i, v)
                         data_count = data_count + 1
                     else
-                        data_displayed[i] = v
+                        table.remove(data_displayed, data_count + 1)
                     end
                     inserted = true
                     break
